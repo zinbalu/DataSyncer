@@ -1,0 +1,209 @@
+.main-content {
+    margin: auto;
+    width: 1000px;
+    /*border: 1px solid royalblue;*/
+    font-family: 'Open Sans', sans-serif;
+    /*color: royalblue;*/
+}
+
+/*
+@font-face {
+    font-family: 'Open Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    src:url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff');
+}
+*/
+
+h2 {
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+body {
+    font-family: 'Open Sans Light', 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    line-height: 1.62em;
+    color: #424242;
+    background: white;
+    font-size: 15px;
+}
+.center {
+    margin: auto;
+    width: 950px;
+}
+
+img.check{
+    width:20px;
+}
+
+ul {
+    list-style-type: circle;
+    margin: 0;
+}
+
+/*region Table*/
+table {
+    border-collapse: collapse;
+    border-top: 1px solid gray;
+    border-bottom: none; /*1px solid black;*/
+    width: 100%;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    line-height: 1.62em;
+    color: #424242;
+    background: white;
+    font-size: 15px;
+}
+table th,
+table td {
+    text-align: center;
+    padding: 7px 5px;
+}
+
+table.no-borders {
+    border: none;
+}
+
+table.width100 {
+    width: 100%;
+}
+table.fixed {
+    table-layout: fixed;
+    padding: 7px 5px;
+}
+
+/*region Inner Table*/
+table.inner-table {
+    text-align: center;
+}
+table.inner-table th {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+table.inner-table th:not(:last-child) {
+    border-right: 1px solid gray;
+}
+table.inner-table td:first-child {
+    font-weight: bold;
+}
+table.inner-table td:not(:last-child) {
+    border-right: 1px solid gray;
+}
+table.inner-table table.inner-table-cargo th {
+    border: none;
+}
+table.inner-table .inner-table-cargo {
+    font-weight: normal !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+table.inner-table .inner-table-cargo td {
+    font-weight: normal !important;
+    font-size: 8px;
+}
+
+/*endregion inner Table*/
+
+/*region gray Left clear Table*/
+table.clear-gray-left {
+    border: none;
+}
+table.clear-gray-left th {
+    font-weight: normal;
+    text-align: left;
+}
+table.clear-gray-left td {
+    font-weight: normal;
+    text-align: left;
+    padding: 0;
+}
+/*endregion gray Left clear Table*/
+
+/*region Table Econt*/
+table.econt-table td {
+    color: gray;
+}
+
+table.econt-table th:first-child {
+    border-right: 1px solid gray;
+}
+
+table.econt-table tr th.border-top-bottom:not(:first-child) {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+/*endregion Table Econt*/
+
+/*region Table Services*/
+table.services {
+    border-top: none;
+    border-bottom: none;
+}
+
+table.services th {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+table.services tr th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+table.services tr td {
+    text-align: left;
+}
+
+table.services tr.royalblue {
+    color: royalblue;
+    font-weight: bold;
+}
+
+table.services tr td.description {
+    color: gray;
+}
+
+table.services tr td.left25 {
+    padding-left: 25px;
+}
+/*endregion Table Services*/
+
+/*region Pagebreaks*/
+/*
+@media print {
+    h2 {page-break-before: always;}
+}
+*/
+
+.pagebreak { page-break-before: always; }
+
+@media print
+{
+    table { page-break-after:auto }
+    tr    { page-break-inside:avoid; page-break-after:auto }
+    td    { page-break-inside:avoid; page-break-after:auto }
+    /*thead { display:table-header-group }*/
+    /*tfoot { display:table-footer-group }*/
+}
+/*endregion Pagebreaks*/
+
+.table-tariff-weight tbody{
+    border-top: 1px solid gray;
+}
+
+.table-tariff-weight tbody tr td:nth-child(odd):not(:last-child),
+.table-tariff-weight thead tr:first-child th:not(:last-child),
+.table-tariff-weight thead tr:nth-child(2) td:not(:last-child),
+.table-tariff-weight thead tr:nth-child(3) td:nth-child(even):not(:last-child),
+.table-tariff-weight tbody tr th{
+    border-right: 1px solid gray;
+}
+
+
+
